@@ -15,3 +15,7 @@ def is_power_of_five(n):
     while n % 5 == 0:
         n //= 5
     return n == 1
+def count_items(lst, i=0):
+    try: lst[i]
+    except: return 0
+    return 1 + count_items(lst, i+1)
