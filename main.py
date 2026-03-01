@@ -8,3 +8,4 @@ print(is_power_of_five(n))
 nums = [1, 5, -3, 1000]
 print(count_items(nums))
 print(sum_(nums))
+print( max_r(nums))
