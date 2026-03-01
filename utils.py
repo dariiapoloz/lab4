@@ -19,3 +19,6 @@ def count_items(lst, i=0):
     try: lst[i]
     except: return 0
     return 1 + count_items(lst, i+1)
+def sum_(lst, i=0):
+    try: return lst[i] + sum_(lst, i+1)
+    except: return 0
