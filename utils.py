@@ -22,3 +22,10 @@ def count_items(lst, i=0):
 def sum_(lst, i=0):
     try: return lst[i] + sum_(lst, i+1)
     except: return 0
+def max_r(lst, i=0, j=0, m=-1000):
+    try: a = lst[i]
+    except: return m
+    try: b = lst[j]
+    except: return max_r(lst, i+1, 0, m)
+    if b != 0: m = max(m, a/b)
+    return max_r(lst, i, j+1, m)
